@@ -1,0 +1,65 @@
+<svg viewBox="0 0 1200 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&display=swap');
+    </style>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0A1929;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#132F4C;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="textGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#00E5FF;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#1DE9B6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00BCD4;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="300" fill="url(#bgGradient)"/>
+  
+  <!-- Accent line top -->
+  <line x1="0" y1="30" x2="1200" y2="30" stroke="#00E5FF" stroke-width="2" opacity="0.5"/>
+  
+  <!-- 3D Extrusion Effect (layered text) -->
+  <!-- Shadow layer (depth) -->
+  <text x="130" y="185" font-family="IBM Plex Mono, monospace" font-size="96" font-weight="700" 
+        fill="#00000030" letter-spacing="8">CHRONOS-X</text>
+  
+  <!-- Mid-depth layers for 3D effect -->
+  <text x="126" y="181" font-family="IBM Plex Mono, monospace" font-size="96" font-weight="700" 
+        fill="#00000040" letter-spacing="8">CHRONOS-X</text>
+  
+  <text x="122" y="177" font-family="IBM Plex Mono, monospace" font-size="96" font-weight="700" 
+        fill="#00000050" letter-spacing="8">CHRONOS-X</text>
+  
+  <!-- Front layer with gradient -->
+  <text x="120" y="175" font-family="IBM Plex Mono, monospace" font-size="96" font-weight="700" 
+        fill="url(#textGradient)" letter-spacing="8" filter="url(#glow)">CHRONOS-X</text>
+  
+  <!-- Tagline -->
+  <text x="120" y="225" font-family="IBM Plex Mono, monospace" font-size="18" font-weight="400"
+        fill="#B0BEC5" letter-spacing="2">High-Performance Network Chaos Engineering</text>
+  
+  <!-- Accent elements (terminal-like) -->
+  <!-- Left corner accent -->
+  <line x1="120" y1="135" x2="180" y2="135" stroke="#00E5FF" stroke-width="3"/>
+  <line x1="120" y1="135" x2="120" y2="155" stroke="#00E5FF" stroke-width="3"/>
+  
+  <!-- Right corner accent -->
+  <line x1="1020" y1="135" x2="1080" y2="135" stroke="#1DE9B6" stroke-width="3"/>
+  <line x1="1080" y1="135" x2="1080" y2="155" stroke="#1DE9B6" stroke-width="3"/>
+  
+  <!-- Bottom accent line -->
+  <line x1="0" y1="270" x2="1200" y2="270" stroke="#00E5FF" stroke-width="2" opacity="0.5"/>
+  
+  <!-- Corner indicators (classic terminal look) -->
+  <circle cx="130" cy="270" r="4" fill="#00E5FF" opacity="0.6"/>
+  <circle cx="1070" cy="270" r="4" fill="#1DE9B6" opacity="0.6"/>
+</svg>
