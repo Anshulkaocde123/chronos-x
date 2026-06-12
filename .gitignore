@@ -1,0 +1,38 @@
+# Build directories
+build/
+build-*/
+cmake-build-*/
+
+# Compiled objects
+*.o
+*.obj
+*.a
+*.so
+*.dylib
+
+# IDE / Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.cache/
+
+# Local AI/tooling workspaces
+.claude/
+.junie/
+.sixth/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Project-specific
+.env
+.firecrawl/
+massif.out.*
+
+# Python
+__pycache__/
+*.pyc
+.venv/
