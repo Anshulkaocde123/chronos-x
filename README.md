@@ -312,7 +312,6 @@ MIT. See [LICENSE](LICENSE).
 
 <div align="center">
 
-**Built for HFT interview prep.**  
 *Determinism, lock-free, zero-copy. Three planes, one guarantee: your packets arrive on time.*
 
 </div>
